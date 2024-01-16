@@ -490,14 +490,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePrefabs:
   - {fileID: 716339229261356343, guid: 277c01d10bf440a42b8c7a8cd1ded67b, type: 3}
-  - {fileID: 8308174204386954353, guid: ce068b148214af444b6d3481080ae5f8, type: 3}
-  - {fileID: 3983869479371175408, guid: 0707d0636c9e7f646913059305de890c, type: 3}
-  - {fileID: 1721429112775650674, guid: effc4817a370a734493d6bb6a433cb50, type: 3}
-  - {fileID: 8760149010333194142, guid: d404e2e1bb22c8d4c997e5d5390534d9, type: 3}
-  - {fileID: 4204451640261120641, guid: 6aa583751ca97154d9cba54d9b9fc83b, type: 3}
+  - {fileID: 8308174204386954353, guid: f8bdea14de0bbce40bee8d613dd8dda7, type: 3}
+  - {fileID: 3277318075049797949, guid: e93c34e86bcdf68da838750c1e16c3dc, type: 3}
+  - {fileID: 811318802937224238, guid: fd290d207eb5deb80a79df700a234ccc, type: 3}
   zSpawn: 0
   TileLength: 30
-  numberOfTiles: 6
+  numberOfTiles: 4
   playerTransform: {fileID: 1314130655}
 --- !u!4 &669443706
 Transform:
@@ -760,6 +758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1314130655}
+  backgroundMusic: {fileID: 8300000, guid: 727ee800211ad29b0a89b4f9a59ea431, type: 3}
 --- !u!1 &1080211672
 GameObject:
   m_ObjectHideFlags: 0
