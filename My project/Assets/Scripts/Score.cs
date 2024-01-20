@@ -5,15 +5,26 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public Text scoretext;
+    public Text scoreText;
     public float scoreValue = 0f;
     public float points = 1f;
-    // Start is called before the first frame update
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        scoretext.text = ((int)scoreValue).ToString();
         scoreValue += points * Time.fixedDeltaTime;
+        Debug.Log(scoreValue);
+    }
+
+    // OnTriggerEnter is called when the Collider other enters the trigger
+    void OnTriggerEnter(Collider other)
+    {
+        // Check if the colliding object has the "Piece" tag
+        if (other.CompareTag("Piece"))
+        {
+            // Add 100 to the score when a piece is collected
+            scoreValue += 100;
+            // Optionally, you can destroy the piece or perform other actions
+            Destroy(other.gameObject);
+        }
     }
 }
