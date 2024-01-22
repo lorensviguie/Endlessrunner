@@ -9,6 +9,8 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     public static bool gameOver;
     public GameObject GameOverPanel;
+    public GameObject button1;
+    public GameObject button2;
 
     void Start()
     {
@@ -23,7 +25,9 @@ public class PlayerManager : MonoBehaviour
         if (gameOver)
         {
             Time.timeScale = 0;
-            GameOverPanel.SetActive(true);     
+            GameOverPanel.SetActive(true);    
+            button1.SetActive(true);
+            button2.SetActive(true);
         }
 
     }
